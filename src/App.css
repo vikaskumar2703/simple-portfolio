@@ -1,0 +1,131 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-image: url("./assets/images/eberhard-grossgasteiger-NvesrDbsrL4-unsplash.jpg");
+  background-size: cover;
+}
+.App {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  height: 20vh;
+  /* background-color: aqua; */
+}
+
+.stack-menu {
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 11.8vh;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.burger-icon {
+  /* transform: rotate(90deg); */
+  color: aliceblue;
+  padding-bottom: 20px;
+}
+
+.navbar-links {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.portfolio-content {
+  font-size: 300%;
+  height: 80vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-content > * {
+  margin: 0;
+}
+
+.links-logos {
+  padding: 4px;
+}
+
+.nickname {
+  /* color: hsla(0, 0%, 100%, 0.664); */
+  font-size: large;
+  font-weight: bolder;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.links-header {
+  /* color: hsla(0, 0%, 100%, 0.664); */
+  font-size: 2vmin;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.image-gallery {
+  width: 60vw;
+}
+@media only screen and (min-width: 600px) {
+  .image-gallery {
+    margin: 0 40vw 0 40vw;
+  }
+}
+.section {
+  background: radial-gradient(circle, #025d77 0, #18223a 100%);
+  color: white;
+}
+.figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure > * {
+  margin: 1rem;
+}
+
+.About {
+  /* padding: 10px; */
+  background: radial-gradient(circle, #025d77 0, #18223a 100%);
+}
+
+.About * {
+  margin: 10px;
+}
+
+.about-img {
+  width: 300px;
+  float: left;
+}
+
+.About > p {
+  margin-right: 20vw;
+}
